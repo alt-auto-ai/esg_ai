@@ -4,15 +4,32 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ESG Snapshot AI-Content 20/10/2025 Issue</title>
+  <title>ESG Snapshot AI-Content DEMO Issue</title>
   <style>
+    :root {
+      --font-sans: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif;
+      --content-font-size: 1.8rem;
+      --content-letter-spacing: 0;
+      --content-spacing-multiplier: 1;
+      --content-line-height: 1.7;
+    }
+
+    html {
+      font-size: 62.5%;
+    }
+
     /* ===== GLOBAL STYLES ===== */
     body {
-      background: #f1f3f4;
+      background: #ffffff;
       /* grey viewport background */
       margin: 0;
-      padding: 40px 0;
-      font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Arial, sans-serif;
+      padding: 4rem 0;
+      font-family: var(--font-sans);
+      font-size: 1.6rem;
+      line-height: var(--content-line-height);
+      color: #0f172a;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
     }
 
     .newsletter-container {
@@ -20,9 +37,9 @@
       /* white canvas */
       max-width: 800px;
       margin: 0 auto;
-      border: 1px solid #e5e7eb;
+      border: 1px solid #ffffff;
       border-radius: 12px;
-      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+      box-shadow: 0 2px 8px rgba(255, 255, 255, 0.05);
       overflow: hidden;
     }
 
@@ -68,6 +85,20 @@
       background: #fff;
     }
 
+    .news-block,
+    .event-list,
+    .job-list {
+      font-size: var(--content-font-size);
+      letter-spacing: var(--content-letter-spacing);
+      line-height: var(--content-line-height);
+    }
+
+    .news-block>*+*,
+    .event-list>*+*,
+    .job-list>*+* {
+      margin-top: calc(2em * var(--content-spacing-multiplier, 1));
+    }
+
     .news-divider {
       width: 90%;
       max-width: 600px;
@@ -87,14 +118,27 @@
     }
 
     .news-block p {
-      margin: 0 0 20px;
-      line-height: 1.7;
+      margin: 0;
+      line-height: inherit;
       color: #0f172a;
     }
 
     .news-block p:last-of-type {
-      margin-bottom: 0;
       color: #334155;
+    }
+
+    .news-block ul,
+    .event-list ul,
+    .job-list ul {
+      margin: 0;
+      padding-left: 2.8rem;
+      line-height: var(--content-line-height);
+    }
+
+    .news-block li+li,
+    .event-list li+li,
+    .job-list li+li {
+      margin-top: 1rem;
     }
 
     /* ===== EVENTS LIST STYLES ===== */
@@ -124,7 +168,18 @@
     .event-item p {
       margin: 0;
       color: #0f172a;
-      line-height: 1.6;
+      line-height: inherit;
+    }
+
+    .event-item>*+* {
+      margin-top: calc(1.6em * var(--content-spacing-multiplier, 1));
+      line-height: inherit;
+    }
+
+    .news-block p+p,
+    .event-list p+p,
+    .job-list p+p {
+      margin-top: calc(1.5em * var(--content-spacing-multiplier, 1));
     }
 
     .event-item a {
@@ -160,7 +215,11 @@
     .job-item p {
       margin: 0;
       color: #0f172a;
-      line-height: 1.6;
+      line-height: inherit;
+    }
+
+    .job-item>*+* {
+      margin-top: calc(1.6em * var(--content-spacing-multiplier, 1));
     }
 
     .job-item a {
@@ -181,53 +240,46 @@
 
     <!-- ===== HEADER SECTION ===== -->
     <section class="newsletter-header">
-      <h1>ESG Snapshot AI Issue 20/10/2025</h1>
-      <h2>(The demo is for text content only. Can be formatted to default web format when publishing.)</h2>
+      <h1>ESG Snapshot (AI DEMO Version 2)</h1>
+      <h2>(The demo is for text content only. Can be formatted to BCSDA web format when publishing.)</h2>
     </section>
 
     <!-- ===== HIGHLIGHTS SECTION ===== -->
     <section class="news-block" style="padding:32px 24px; background:#fff;">
-      <p style="margin:0 0 20px; color:#0f172a; font-weight:600; font-size:1.1rem;">
+      <p style="margin:0 0 32px 0; color:#0f172a;">
         This week's highlights include:
       </p>
 
-      <ul style="margin:0; padding-left:32px; color:#0f172a; line-height:1.7;">
+      <ul style="margin:0; color:#0f172a;">
         <!-- National -->
-        <ul>
-          <li><strong>Supplier survey launched.</strong> Australia&#39;s grocery suppliers can influence policy through
-            a survey open until 11 November 2025.</li>
-          <li><strong>Regulatory reform unveiled.</strong> The Albanese Government&#39;s updated RIG aims to streamline
-            financial sector compliance and enhance coordination.</li>
-          <li><strong>Australia&#39;s emissions target.</strong> The government aims for a 62–70% reduction by 2035,
-            unlocking economic opportunities.</li>
+        <ul style="list-style-type: disc;">
+          <li><strong>New biosecurity leadership.</strong> Dr Melissa McEwen begins a five-year term as
+            Inspector-General of Biosecurity on 25 October.</li>
+          <li><strong>Demand response mechanism.</strong> AEMC endorses the WDRM, enhancing energy efficiency and
+            proposing broader participation by mid-2026.</li>
+          
+          <li><strong>Bird flu alert.</strong> Signs of H5 avian influenza in elephant seals prompt Australia to enhance
+            outbreak preparedness.</li>
+          
+          <li><strong>Strengthening Northern Australia.</strong> The Government invests $2 billion in housing
+            to support First Nations communities and growth.</li>
         </ul>
 
-        <!-- Queensland -->
-        <ul>
-          <li><strong>Grants for communities.</strong> Queensland offers up to $500,000 for multicultural infrastructure
-            projects, applications due by 14 November.</li>
-        </ul>
+        <!-- Victoria -->
+        
 
         <!-- Tasmania -->
-        <ul>
-          <li><strong>Tasmania&#39;s water security.</strong> A $3.67 million grant enhances dam management, boosting
-            biodiversity and drought resilience for farmers.</li>
+        <ul style="list-style-type: disc;">
+          <li><strong>Blue economy milestones.</strong> Australia&#39;s first commercial aquaculture operation in
+            Commonwealth waters marks a significant regulatory advance.</li>
         </ul>
 
         <!-- International -->
-        <ul>
-          <li><strong>New EU waste rules.</strong> The revised Waste Framework Directive mandates EPR for textiles and
-            food waste reduction targets by 2030.</li>
-          <li><strong>G20&#39;s pivotal commitments.</strong> Finance ministers stress MDBs&#39; role in growth, debt
-            sustainability, and climate resilience initiatives.</li>
-          <li><strong>Debt sustainability crisis?</strong> G20 commits to enhance debt frameworks for vulnerable
-            countries facing rising financing challenges.</li>
-          <li><strong>Eased reporting rules.</strong> New EU draft limits sustainability obligations to large firms,
-            raising accountability concerns.</li>
-          <li><strong>Bird flu outbreak escalates.</strong> HPAI H5N1 confirmed in multiple poultry sites, triggering
-            extensive biosecurity measures and culls.</li>
-          <li><strong>Shipping&#39;s net-zero delay.</strong> IMO postpones Net-Zero Framework discussions for one year,
-            impacting emissions reduction timelines.</li>
+        <ul style="list-style-type: disc;">
+          <li><strong>Bilateral minerals pact.</strong> Australia and the US commit $2 billion to secure critical
+            minerals supply chains.</li>
+          <li><strong>China&#39;s critical minerals crisis.</strong> New export controls threaten global supply chains,
+            increasing costs and operational risks for industries.</li>
         </ul>
 
 
@@ -242,171 +294,148 @@
         alt="National Section Header" class="subsection-image" />
     </section>
     <section class="news-block">
-      <p><a href="https://igcc.org.au/building-board-capability/" target="_blank" rel="noopener">New IGCC Report Sets
-          Standards for Board Climate Governance by 2025</a></p>
-      <p>IGCC outlines five principles for climate oversight. Boards must enhance skills for net zero transition.
-        Investors can now assess board readiness effectively.</p>
-      <p>The report establishes a framework for evaluating board capabilities, crucial for managing climate risks and
-        ensuring corporate accountability in the transition to net zero.</p>
+      <p>The <strong>Australian Energy Market Commission's</strong> recommendation to continue the wholesale demand response mechanism
+        has implications for energy efficiency in the national electricity market, says the AEMC.</p>
+      <p>The AEMC highlights that the WDRM allows large electricity users to reduce consumption during peak demand,
+        benefiting all electricity consumers.</p>
+      <p>It anticipates initiating a rule change in the first half of 2026 to assess participation from sites with
+        multiple connection points.</p>
     </section>
 
     <div class="news-divider"></div>
 
     <section class="news-block">
-      <p><a
-          href="https://minister.agriculture.gov.au/collins/media-releases/joint-media-release-suppliers-asked-views-working-relationships-supermarkets"
-          target="_blank" rel="noopener">Suppliers Urged to Participate in 2025 Grocery Code Survey by November 11</a>
-      </p>
-      <p>Survey aims to assess supplier-supermarket relationships. Targets Coles, Woolworths, Aldi, and Metcash.
-        Mandatory code reforms enforce penalties for breaches.</p>
-      <p>The survey is crucial for shaping future regulations, ensuring fair treatment for suppliers and enhancing
-        compliance within the grocery sector.</p>
+      <p>"Seeing signs consistent with H5 bird flu in wildlife on Heard Island is not unexpected," says the <strong>Joint DAFF & DCCEEW</strong> media statement.</p>
+      <p>"The Australian Government is investing more than $100 million into strengthening bird flu preparedness and
+        enhancing our response capacity," the statement says.</p>
+      <p>"A confirmed detection on Heard Island would not substantially increase the risk to Australia.", the statemend adds.</p>
     </section>
 
     <div class="news-divider"></div>
 
     <section class="news-block">
-      <p><a
-          href="https://ministers.treasury.gov.au/ministers/daniel-mulino-2025/media-releases/further-streamlining-and-coordination-financial-sector"
-          target="_blank" rel="noopener">Government Updates Regulatory Initiatives Grid For Financial Sector</a></p>
-      <p>Second edition released to enhance regulatory transparency. Focus on reducing data collection duplication.
-        Streamlined coordination among financial regulators.</p>
-      <p>The updated Regulatory Initiatives Grid aims to simplify compliance and improve engagement between industry and
-        regulators, fostering a more resilient financial system.</p>
+      <p><strong>Statutory development – Biosecurity appointment.-</strong>The Labor Government has appointed
+        Dr Melissa McEwen as the new Inspector-General of Biosecurity.</p>
+      <p>The government has appointed Dr McEwen to enhance biosecurity systems across Australia, unless otherwise
+        specified by regulatory exceptions.</p>
+      <p>The government has also invested over $2 billion since 2022 to strengthen biosecurity, aiming to mitigate
+        risks from exotic pests and diseases by the end of 2025.</p>
     </section>
 
     <div class="news-divider"></div>
 
     <section class="news-block">
-      <p><a
-          href="https://www.apra.gov.au/news-and-publications/apra-confirms-westpac-has-met-obligations-of-court-enforceable-undertaking"
-          target="_blank" rel="noopener">$500 Million Capital Add-On Removed From Westpac After Compliance</a></p>
-      <p>APRA confirms Westpac completed risk transformation program. $500 million capital add-on removed immediately.
-        Westpac must maintain strong governance and risk practices.</p>
-      <p>The removal of the capital add-on reflects Westpac&#39;s successful remediation efforts, enhancing its
-        compliance standing while reinforcing expectations for ongoing risk management.</p>
+      <p><strong>Grant opportunity – drought and climate resilience.</strong> The Government has opened
+        $27 million in funding to scale up or extend drought and climate resilience projects.</p>
+      <p>Eligible applicants include participants already supported through Future Drought Fund programs. Who:</p>
+      <p style="margin-left:32px; display:flex; align-items:flex-start; gap:12px;"><span
+          style="flex:0 0 12px;">&bull;</span><span><strong><em>Demonstrate</em></strong> the adoption of evidence-based
+          cropping or grazing practices.</span></p>
+      <p style="margin-left:32px; display:flex; align-items:flex-start; gap:12px;"><span
+          style="flex:0 0 12px;">&bull;</span><span><strong><em>Implement</em></strong> more efficient water use in farm dams.</span></p>
+      <p style="margin-left:32px; display:flex; align-items:flex-start; gap:12px;"><span
+          style="flex:0 0 12px;">&bull;</span><span><strong><em>Deploy</em></strong> drone or robot
+          technologies.</span></p>        
+    </section>
+
+    <div class="news-divider"></div>
+
+    
+
+    <section class="news-block">
+      <p>The <strong>ACCC</strong> has opposed <strong>MicroStar Logistics LLC’s</strong> proposed acquisition of the assets of <strong>Konvoy Holdings Pty Ltd</strong>
+        concerning competition in the keg pooling market.</p>
     </section>
 
     <div class="news-divider"></div>
 
     <section class="news-block">
-      <p><a href="https://www.csiro.au/en/news/All/Articles/2025/October/cyanide-recycling-gold-recovery"
-          target="_blank" rel="noopener">Sustainable Gold Extraction Process To Reduce Cyanide Use by 100%</a></p>
-      <p>CSIRO unveils new cyanidation technology for gold recovery. Gold producers can enhance yields while lowering
-        risks. Pilot projects are set to commence in early 2026.</p>
-      <p>The innovative process promises to improve economic returns and environmental safety, addressing long-standing
-        concerns over cyanide&#39;s toxicity in gold mining.</p>
+      <p><strong>CSIRO</strong> has partnered with Indonesia's state-owned utility <strong>PLN</strong> to develop smart inverters for managing power
+        flows in local electricity networks.</p>
+      <p>The project aims to enhance grid stability and enable greater integration of renewable energy resources in both
+        Australia and Indonesia.</p>
+    </section>
+
+    <div class="news-divider"></div>
+
+    
+
+    <section class="news-block">
+      <p>The Northern Territory and Queensland have joined New South Wales as members of the <strong>PFAS National Coordinating Body</strong>, strengthening national collaboration on the management of per- and poly-fluoroalkyl substances (PFAS).</p>
+      <p>“Communities affected by PFAS contamination need decisive action. That’s why we’re expanding the PFAS National
+        Coordinating Body to ensure support reaches those who need it most, right across Australia,” Assistant Minister
+        for Defence, Peter Khalil, said.</p>
     </section>
 
     <div class="news-divider"></div>
 
     <section class="news-block">
-      <p><a href="https://www.csiro.au/en/news/All/Articles/2025/October/sustainable-resources" target="_blank"
-          rel="noopener">$10 Million Green Metals Initiative Aims for Low-Emission Industry</a></p>
-      <p>Government launches $10 million Green Metals Innovation Network. Collaboration targets decarbonisation in metal
-        production. Partnerships expected to enhance global competitiveness.</p>
-      <p>The initiative seeks to position Australia as a leader in sustainable metal supply chains, addressing both
-        environmental and economic challenges in the sector.</p>
+      <p><strong>AEMO</strong> has advanced its program to procure new types of security services under the <strong>‘Improving Security Frameworks’</strong> rule change.</p>
+      <p>Having BESS contracted importantly reduces the need for market intervention to manage power system security
+        during minimum system load events – providing participants with more certainty on cost recovery.</p>
     </section>
 
     <div class="news-divider"></div>
 
     <section class="news-block">
-      <p><a href="https://www.dcceew.gov.au/about/news/register-net-zero-plan-webinar" target="_blank"
-          rel="noopener">Government Targets 62–70% Emissions Reduction By 2035 Amid Net Zero Plan</a></p>
-      <p>Government sets ambitious emissions reduction target. Key sectors include electricity and energy. Webinar
-        scheduled for October 23, 2025.</p>
-      <p>The Net Zero Plan outlines a comprehensive strategy for emissions reduction, aiming to stimulate economic
-        growth and attract investment in sustainable technologies.</p>
+      <p><strong>Grant opportunities – housing and infrastructure development in Northern Australia.</strong> The Government has announced significant funding initiatives to enhance housing supply and infrastructure in
+        northern Australia.</p>
+      <p>This opportunity invites projects that focus on improving housing and infrastructure for First Nations
+        communities.</p>
+      <p><strong>Battery innovation.</strong> The Australian Government has invested $25 million in
+        Relectrify to advance its AC1 battery technology.</p>
+      <p>This initiative invites projects that enhance energy storage and reduce costs.</p>
+      
     </section>
 
-    <div class="news-divider"></div>
-
-    <section class="news-block">
-      <p><a href="https://www.industry.gov.au/news/green-aluminium-production-credit-have-your-say" target="_blank"
-          rel="noopener">$2 Billion Green Aluminium Credit Consultation Launches</a></p>
-      <p>Submissions open until 30 October 2025. Initiative targets emissions reduction in aluminium production.
-        Smelters must demonstrate lower emissions by 2036.</p>
-      <p>The proposed credit aims to incentivise renewable energy adoption in aluminium smelting, aligning with
-        Australia&#39;s 2035 net zero emissions target while enhancing industry competitiveness.</p>
-    </section>
-
-    <div class="news-divider"></div>
-
-    <section class="news-block">
-      <p><a
-          href="https://www.infrastructure.gov.au/department/media/news/national-road-transport-technology-strategy-released"
-          target="_blank" rel="noopener">National Road Transport Technology Strategy by 2027 Launched</a></p>
-      <p>Establishes framework for safer, sustainable transport technologies. Affects vehicle automation and
-        connectivity across Australia. First action plan prioritises cooperative intelligent transport systems.</p>
-      <p>The strategy aims to harmonise technology deployment, enhancing safety and productivity while addressing
-        regulatory and investment challenges in road transport.</p>
-    </section>
-
-    <div class="news-divider"></div>
-
-
-
-    <!-- ===== QUEENSLAND ===== -->
+    <div class="news-divider"></div>  
+    <!-- ===== NEW SOUTH WALES ===== -->
     <section>
-      <img src="https://github.com/alt-auto-ai/esg_ai/raw/main/ESG%20Snapshot_%20Issue_files/Queenland.png"
+      <img src="https://github.com/alt-auto-ai/esg_ai/raw/main/ESG%20Snapshot_%20Issue_files/NSW.png"
+        alt="New South Wales Section Header" class="subsection-image" />
+    </section>
+    <section class="news-block">
+      <p>“Biodiversity in NSW is facing many pressures, with climate change, habitat loss and invasive species known to
+        have a massive impact on our environment,” says the Hon. Niall Blair, Chair of the <strong>NSW Biodiversity Conservation Trust Board</strong>.</p>
+      <p>“We’ll deliver and source new investments and collaborate with partners to protect, connect and restore
+        biodiversity on private land,” the minister says.</p>
+    </section>
+
+    <div class="news-divider"></div>
+
+    <section class="news-block">
+      <p>"An important step for the Central-West Orana region – $140 million invested directly into protecting
+        and restoring nature as we deliver the renewable energy infrastructure NSW needs to keep the lights on," says
+        Minister for <strong>Climate Change, Energy and the Environment</strong>, Penny Sharpe.</p>
+      <p>"Through Strategic Offset Delivery Agreements, the Minns Labor Government is embedding biodiversity outcomes
+        into the renewable energy transition, building a legacy of restored ecosystems, stronger habitat corridors and
+        sustainable local opportunities," the minister added.</p>
+    </section>
+
+    <div class="news-divider"></div>
+
+    <!-- ===== VICTORIA ===== -->
+    <section>
+      <img src="https://github.com/alt-auto-ai/esg_ai/raw/main/ESG%20Snapshot_%20Issue_files/Victoria.png"
         alt="Victoria Section Header" class="subsection-image" />
-    </section>
+
+
     <section class="news-block">
-      <p><a href="https://statements.qld.gov.au/statements/103715" target="_blank" rel="noopener">Government Secures
-          Three Major Agreements Worth A$100 Million at World Expo 2025</a></p>
-      <p>Crisafulli Government finalised three agreements with Japanese firms. New partnerships focus on clean energy
-        and affordable housing. World Expo 2025 attracted 2.8 million visitors to Australia Pavilion.</p>
-      <p>The agreements signal a strategic pivot towards innovation and sustainability, enhancing Queensland&#39;s
-        economic prospects ahead of the 2032 Olympic Games.</p>
+      <p>A preferred bidder has been selected to build the new underground stations at East Place as part of the <strong>Suburban Rail Loop</strong>.</p>
+      <p>The project is expected to create up to <strong>8,000</strong> direct local jobs and deliver <strong>70,000</strong> new homes in the surrounding
+        neighbourhoods.</p>
     </section>
 
     <div class="news-divider"></div>
 
     <section class="news-block">
-      <p><a href="https://statements.qld.gov.au/statements/103720" target="_blank" rel="noopener">$5 Million
-          Multicultural Connect Grants Program for 2026 Launched</a></p>
-      <p>Expressions of Interest for grants close on 14 November. Eligible groups can receive up to $500,000 each. First
-        projects to commence from 1 July 2026.</p>
-      <p>The Crisafulli Government&#39;s initiative aims to enhance community infrastructure, fostering social cohesion
-        and economic opportunities for multicultural organisations across Queensland.</p>
+      <p>Following an investigation by the <strong>Essential Services Commission</strong>, <strong>Re-Energi Renewable Energy Pty Ltd</strong> has been
+        suspended from the Victorian Energy Upgrades program for three months concerning breaches of consumer
+        protections and false claims under the VEU program.</p>
     </section>
 
     <div class="news-divider"></div>
 
-    <section class="news-block">
-      <p><a href="https://statements.qld.gov.au/statements/103730" target="_blank" rel="noopener">Government Invests
-          A$24 Million in Fire Ant Eradication Efforts</a></p>
-      <p>Aerial treatments launched to combat invasive fire ant colonies. 106,000 hectares targeted for treatment by
-        mid-2026. Government aims to reduce fire ant densities by 70%.</p>
-      <p>The Crisafulli Government&#39;s initiative marks a significant escalation in biosecurity efforts, aiming to
-        contain and eradicate fire ants while safeguarding local ecosystems and agriculture.</p>
-    </section>
-
-    <div class="news-divider"></div>
-
-    <section class="news-block">
-      <p><a
-          href="https://www.statedevelopment.qld.gov.au/news-and-events/from-paddocks-to-prosperity-pongamia-trial-sparks-new-growth-in-north-queensland"
-          target="_blank" rel="noopener">$180.6 Million Fund Allocated To Boost Biofuels By 2030</a></p>
-      <p>Queensland invests A$180.6 million in biofuels. Pongamia trial aims to diversify agricultural income.
-        Sustainable Aviation Fuel market projected at A$23 billion.</p>
-      <p>The funding initiative seeks to enhance regional economic resilience while positioning Queensland as a leader
-        in sustainable energy solutions.</p>
-    </section>
-
-    <div class="news-divider"></div>
-
-    <section class="news-block">
-      <p><a href="https://www2.gbrmpa.gov.au/news/stunning-fish-spawning-spectacle-set-unfold-great-barrier-reef"
-          target="_blank" rel="noopener">Fishing Closures Implemented During Critical Spawning Events</a></p>
-      <p>Two closures for coral reef fin fish from October 18. Spanish mackerel closures coincide with breeding season.
-        Measures aim to sustain fish stocks and local livelihoods.</p>
-      <p>The closures are designed to protect vulnerable fish populations during their critical spawning periods,
-        ensuring long-term sustainability for Queensland&#39;s fisheries.</p>
-    </section>
-
-    <div class="news-divider"></div>
 
 
     <!-- ===== WESTERN AUSTRALIA ===== -->
@@ -415,13 +444,10 @@
         alt="Western Australia Section Header" class="subsection-image" />
     </section>
     <section class="news-block">
-      <p><a
-          href="https://international.austrade.gov.au/en/news-and-analysis/news/japanese-venture-capital-firm-invests-in-australian-ccs-developer-deepc-store"
-          target="_blank" rel="noopener">Japanese VC Firm Invests A$3.5 Million in Australian CCS Project</a></p>
-      <p>Incubate Fund invests JPY350 million in deepC Store. CStore1 aims to store 3 million tonnes of CO₂ annually.
-        Investment supports Japan&#39;s emissions reduction targets.</p>
-      <p>This partnership enhances Japan&#39;s carbon storage capacity while fostering international collaboration in
-        carbon capture and storage technologies across the Asia-Pacific region.</p>
+      <p>The <strong>Busselton Water Supply Improvement project</strong> has received planning approval for a new $60 million water
+        treatment plant in Western Australia's South West.</p>
+      <p>The project will increase supply capacity to Busselton and Dunsborough by 20 per cent, supporting local
+        industry and economic diversification.</p>
     </section>
 
     <div class="news-divider"></div>
@@ -432,14 +458,11 @@
         alt="South Australia Section Header" class="subsection-image" />
     </section>
     <section class="news-block">
-      <p><a
-          href="https://www.fwc.gov.au/about-us/news-and-media/news/major-case-torrens-island-power-station-b-net-zero-economy-authority"
-          target="_blank" rel="noopener">Net Zero Economy Authority Seeks Community Determination for 2026 Power Station
-          Closure</a></p>
-      <p>CEO applies for community of interest determination. Torrens Island Power Station B to close by June 2028.
-        Energy Industry Jobs Plan will support affected workers.</p>
-      <p>The application aims to establish a framework for job transitions as the gas-fired power station prepares for
-        closure, impacting local employment dynamics.</p>
+      <p>Adelaide Researchers Transform Waste Plastics Into Catalysts By 2025</p>
+      <p><strong>Adelaide University</strong> developed a scalable upcycling method. Single-atom catalysts enhance water purification and
+        energy tech. X-ray absorption spectroscopy confirmed atomic structure effectiveness.</p>
+      <p>This innovation addresses plastic pollution while meeting material demands, showcasing a sustainable pathway
+        for businesses amid rising regulatory pressures.</p>
     </section>
 
     <div class="news-divider"></div>
@@ -450,13 +473,9 @@
         alt="Tasmania Section Header" class="subsection-image" />
     </section>
     <section class="news-block">
-      <p><a
-          href="https://minister.agriculture.gov.au/collins/media-releases/fdf-resilient-landscapes-grant-landcare-tasmania"
-          target="_blank" rel="noopener">Government Allocates A$3.67 Million For Tasmanian Water Management</a></p>
-      <p>Grants support Landcare Tasmania&#39;s dam restoration efforts. Farmers benefit from improved water quality and
-        biodiversity. Funding part of A$2 billion climate resilience investment.</p>
-      <p>The initiative enhances agricultural sustainability while addressing climate challenges, promoting effective
-        land management and water security across Tasmania.</p>
+      <p>Chair of the <strong>Blue Economy CRC</strong> Greg Johannes has delivered a statement, focusing on
+        advancements in the blue economy, including the ASEAN Blue Economy Implementation Plan and the successful
+        stocking of Australia's first commercial-scale aquaculture operation.</p>
     </section>
 
     <div class="news-divider"></div>
@@ -471,37 +490,10 @@
     <section class="event-list" aria-labelledby="events-title">
       <div class="event-item new">
         <p style="font-weight:400;">
-          <strong>14-Oct</strong> | <a
-            href="https://www.brighttalk.com/webcast/20092/653703?size=10&rank=-webcast_relevance&duration=0..&contentType=webcast&q=esg"
-            target="_blank" rel="noopener" style="font-weight:400; text-decoration:none;">Beyond the label: ESG,
-            regulation and the reality for advisers</a>
-        </p>
-      </div>
-
-      <div class="event-item new">
-        <p style="font-weight:400;">
-          <strong>22-Oct</strong> | <a
-            href="https://www.brighttalk.com/webcast/9819/637070?size=10&rank=-webcast_relevance&duration=0..&contentType=webcast&q=esg"
-            target="_blank" rel="noopener" style="font-weight:400; text-decoration:none;">What is Driving Sustainable
-            Investment Performance?</a>
-        </p>
-      </div>
-
-      <div class="event-item new">
-        <p style="font-weight:400;">
-          <strong>23-Oct</strong> | <a
-            href="https://www.governanceinstitute.com.au/events/e09491-webinar-strategies-for-effective-resilience-the-power-of-ai/"
-            target="_blank" rel="noopener" style="font-weight:400; text-decoration:none;">Webinar – Strategies for
-            effective resilience & the power of AI</a>
-        </p>
-      </div>
-
-      <div class="event-item new">
-        <p style="font-weight:400;">
           <strong>28-Oct</strong> | <a
-            href="https://events.humanitix.com/climate-talk-canberra-ambitious-investable-and-implementable-ndcs-and-national-climate-strategies?hxchl=mkt-sch"
-            target="_blank" rel="noopener" style="font-weight:400; text-decoration:none;">Climate Talk Canberra:
-            Ambitious, Investable, and Implementable NDCs and National Climate Strategies</a>
+            href="https://us02web.zoom.us/webinar/register/WN_8jZ04TefRjWvvIzf2uSGCQ#/registration" target="_blank"
+            rel="noopener" style="font-weight:400; text-decoration:none;">Unlocking synergies to streamline climate
+            disclosure-a webinar by GRI and CDP</a>
         </p>
       </div>
 
@@ -509,7 +501,24 @@
         <p style="font-weight:400;">
           <strong>28-Oct</strong> | <a href="https://www.wri.org/events/2025/10/state-climate-action-2025#register"
             target="_blank" rel="noopener" style="font-weight:400; text-decoration:none;">The State of Climate Action in
-            2025</a>
+            2025- a webinar by WRI</a>
+        </p>
+      </div>
+
+      <div class="event-item new">
+        <p style="font-weight:400;">
+          <strong>28-Oct</strong> | <a
+            href="https://www.brighttalk.com/webcast/19061/654830?size=10&rank=-webcast_relevance&duration=0..&contentType=webcast&q=esg"
+            target="_blank" rel="noopener" style="font-weight:400; text-decoration:none;">Controversy Ratings in the Age
+            of Double Materiality- a webinar by Morningstar - Sustainable Investing</a>
+        </p>
+      </div>
+
+      <div class="event-item new">
+        <p style="font-weight:400;">
+          <strong>29-Oct</strong> | <a href="https://unglobalcompact.org.au/wp-content/uploads/2025/05/Wrap-up.png.webp"
+            target="_blank" rel="noopener" style="font-weight:400; text-decoration:none;">Wrap-up Session | Climate
+            Ambition Accelerator-UNGC</a>
         </p>
       </div>
 
@@ -527,33 +536,67 @@
           <strong>30-Oct</strong> | <a
             href="https://www.wri.org/events/2025/10/handbook-sustainable-ocean-plans-launch-practitioners-guide#register"
             target="_blank" rel="noopener" style="font-weight:400; text-decoration:none;">Handbook on Sustainable Ocean
-            Plans: Launch of the Practitioners' Guide</a>
+            Plans: Launch of the Practitioners' Guide-a webinar by WRI</a>
         </p>
       </div>
 
       <div class="event-item new">
         <p style="font-weight:400;">
-          <strong>1-Nov</strong> | <a
-            href="https://events.humanitix.com/10-years-of-climate-conversations?hxchl=mkt-sch" target="_blank"
-            rel="noopener" style="font-weight:400; text-decoration:none;">10 Years of Climate Conversations</a>
+          <strong>30-Oct</strong> | <a
+            href="https://www.brighttalk.com/webcast/20373/653251?size=10&rank=-webcast_relevance&duration=0..&contentType=webcast&q=esg"
+            target="_blank" rel="noopener" style="font-weight:400; text-decoration:none;">The acceleration of
+            sustainability regulation in Asia-Pacific region: What it means for global business</a>
         </p>
       </div>
 
       <div class="event-item new">
         <p style="font-weight:400;">
           <strong>4-Nov</strong> | <a
-            href="https://www.unpri.org/all-events-and-webinars/sustainable-finance-policy-conference-2025/13211.article"
-            target="_blank" rel="noopener" style="font-weight:400; text-decoration:none;">Sustainable Finance Policy
-            Conference 2025</a>
+            href="https://events.humanitix.com/from-innovation-to-impact-in-the-changing-realities-of-agri-food-value-chains-worldwide?hxchl=mkt-sch"
+            target="_blank" rel="noopener" style="font-weight:400; text-decoration:none;">From Innovation to Impact in
+            the Changing Realities of Agri-food Value Chains Worldwide-an ANU event</a>
+        </p>
+      </div>
+
+
+
+
+
+
+
+      <div class="event-item new">
+        <p style="font-weight:400;">
+          <strong>5-Nov</strong> | <a
+            href="https://www.governanceinstitute.com.au/events/e09517-apac-governance-outlook-2026-preparing-boards-for-the-year-ahead/"
+            target="_blank" rel="noopener" style="font-weight:400; text-decoration:none;">Asia-Pacific Governance Outlook 2026:
+            Preparing Boards for the Year Ahead</a>
         </p>
       </div>
 
       <div class="event-item new">
         <p style="font-weight:400;">
-          <strong>10-Dec</strong> | <a
-            href="https://unglobalcompact.org.au/wp-content/uploads/2025/08/Email-banner-6.png.webp" target="_blank"
-            rel="noopener" style="font-weight:400; text-decoration:none;">Peer Learning Session | Sustainability
-            Reporting Community of Practice</a>
+          <strong>5-Nov</strong> | <a
+            href="https://www.wri.org/events/2025/11/high-level-political-dialogue-coalition-high-ambition-multi-level-partnerships-champ"
+            target="_blank" rel="noopener" style="font-weight:400; text-decoration:none;">High-Level Political Dialogue
+            of the Coalition for High Ambition Multi-Level Partnerships (CHAMP) - by WRI</a>
+        </p>
+      </div>
+
+      <div class="event-item new">
+        <p style="font-weight:400;">
+          <strong>6-Nov</strong> | <a
+            href="https://www.governanceinstitute.com.au/events/e08660-national-virtual-discussion-group-not-for-profit-advisory-boards-opportunity-for-nfps/"
+            target="_blank" rel="noopener" style="font-weight:400; text-decoration:none;">National Virtual Discussion
+            Group - Not-for-Profit: Advisory Boards: Opportunity for NFPs - by Governance Institute of Australia</a>
+        </p>
+      </div>
+
+      <div class="event-item new">
+        <p style="font-weight:400;">
+          <strong>7-Nov</strong> | <a
+            href="https://www.eventbrite.com.au/e/deep-conceptualisations-of-sustainability-and-sdgs-through-art-story-tickets-1827280598459?aff=ebdssbdestsearch"
+            target="_blank" rel="noopener" style="font-weight:400; text-decoration:none;">Deep Conceptualisations of
+            Sustainability and SDGs through Art & Story - by Curtin University</a>
         </p>
       </div>
     </section>
@@ -589,15 +632,23 @@
       <div class="job-item new">
         <p style="font-weight:400;">
           <a href="https://www.seek.com.au/sustainability-jobs/in-All-Australia/full-time?daterange=3" target="_blank"
-            rel="noopener" style="text-decoration:none;">Environment Protection Authority Victoria is hiring a regional
-            manager - North Metro in Preston, Melbourne.</a>
+            rel="noopener" style="text-decoration:none;">Environment Protection Authority Victoria is looking for a regional
+            manager - North Metro, Melbourne.</a>
+        </p>
+      </div>
+
+      <div class="job-item new">
+        <p style="font-weight:400;">
+          <a href="https://www.seek.com.au/CEO-jobs/in-All-Australia/full-time?daterange=3" target="_blank"
+            rel="noopener" style="text-decoration:none;">Motorcycle Holdings is hiring a portfolio delivery lead in
+            Sydney, hybrid.</a>
         </p>
       </div>
 
       <div class="job-item new">
         <p style="font-weight:400;">
           <a href="https://www.seek.com.au/sustainability-jobs/in-All-Australia/full-time?daterange=3" target="_blank"
-            rel="noopener" style="text-decoration:none;">Crown Resorts Limited is hiring a sustainability manager in
+            rel="noopener" style="text-decoration:none;">Crown Resorts Limited is looking for a sustainability manager in
             Burswood, WA.</a>
         </p>
       </div>
@@ -605,24 +656,39 @@
       <div class="job-item new">
         <p style="font-weight:400;">
           <a href="https://www.seek.com.au/CEO-jobs/in-All-Australia/full-time?daterange=3" target="_blank"
-            rel="noopener" style="text-decoration:none;">Impact Advising is hiring a chief executive officer, based in
-            Sydney, NSW.</a>
+            rel="noopener" style="text-decoration:none;">Impact Advising is seeking a chief executive officer, based in
+            Sydney NSW.</a>
         </p>
       </div>
+
+      <div class="job-item new">
+        <p style="font-weight:400;">
+          <a href="https://www.seek.com.au/climate-change-jobs/in-All-Australia/full-time?daterange=3" target="_blank"
+            rel="noopener" style="text-decoration:none;">Clean Energy Regulator is recruiting a general manager
+            compliance branch, based in Canberra.</a>
+        </p>
+      </div>
+
+
+
+ 
+
 
       <div class="job-item new">
         <p style="font-weight:400;">
           <a href="https://www.seek.com.au/sustainability-jobs/in-All-Australia/full-time?daterange=3" target="_blank"
-            rel="noopener" style="text-decoration:none;">Hunter New England Local Health District is hiring a
-            sustainability program manager in New Lambton Heights, NSW.</a>
+            rel="noopener" style="text-decoration:none;">Seqwater is recruiting a water sustainability specialist in
+            Brisbane QLD.</a>
         </p>
       </div>
+
+ 
 
       <div class="job-item new">
         <p style="font-weight:400;">
           <a href="https://www.seek.com.au/CEO-jobs/in-All-Australia/full-time?daterange=3" target="_blank"
-            rel="noopener" style="text-decoration:none;">Clean Energy Regulator is hiring a general manager compliance
-            branch in Canberra.</a>
+            rel="noopener" style="text-decoration:none;">Department of Agriculture, Fisheries & Forestry is hiring a
+            chairperson of Wine Australia, based in Brisbane or Canberra.</a>
         </p>
       </div>
     </section>
@@ -640,109 +706,60 @@
         alt="Knowledge, Insights, and Data Section Header" class="subsection-image" />
     </section>
     <section class="news-block">
-      <p><a href="https://energy.ec.europa.eu/news/focus-hydrogen-2025-10-14_en" target="_blank" rel="noopener">EU Aims
-          For 10% Hydrogen Share By 2050 To Decarbonise Economy</a></p>
-      <p>Targets 10% hydrogen in energy mix by 2050. Focus on hard-to-electrify sectors like transport. €5.6 billion
-        allocated for hydrogen projects.</p>
-      <p>The EU&#39;s strategy prioritises hydrogen to enhance energy security and reduce emissions, addressing critical
-        infrastructure and investment needs for a sustainable energy transition.</p>
+      
+      <p><strong>Australia and the United States</strong> established a bilateral framework to secure supply chains for critical minerals and rare earths, essential for defense and advanced technologies.</p>
+      <p>This initiative includes a commitment of at least <strong>$1 billion</strong> each from both countries towards an <strong>$8.5 billion</strong> pipeline of priority projects, highlighting significant investment in sustainable resource management.</p>
+      <p>The formation of a <strong>Critical Minerals Supply Security Response Group</strong> aims to address supply vulnerabilities, indicating a proactive approach to regulatory compliance and stakeholder engagement in the critical minerals sector, which is increasingly vital for economic resilience and environmental governance.</p>
+      <p>Meanwhile China has announced new export controls on critical minerals to manage supply chain vulnerabilities.</p>
+      <p>The <strong>Ministry of Commerce</strong> has imposed licensing requirements for exports of products containing Chinese-sourced
+        rare earth materials, effective immediately.</p>
+      <p>The government reports that China accounted for <strong>91%</strong> of global rare earth refining in 2024, with new
+        controls expected to impact global supply chains significantly by <strong>8 November</strong>.</p>
+    </section>
+
+    
+    <div class="news-divider"></div>
+    <section class="news-block">
+      <p><strong>UN's Drought Resilience Investment Facility.</strong> The United Nations Convention to
+        Combat Desertification has opened a call for expressions of interest for a Fund Manager to co-develop and
+        promote the Drought Resilience Investment Facility.</p>
+      <p>Qualified alternative asset managers are invited to demonstrate their capabilities and experience.</p>
+      <p style="margin-left:32px; display:flex; align-items:flex-start; gap:12px;"><span
+          style="flex:0 0 12px;">&bull;</span><span><strong><em>Demonstrate</em></strong> strong institutional capacity
+          and a proven track record in impact and blended finance.</span></p>
+      <p style="margin-left:32px; display:flex; align-items:flex-start; gap:12px;"><span
+          style="flex:0 0 12px;">&bull;</span><span><strong><em>Be</em></strong> authorized to act as a qualified
+          alternative asset manager with an excellent international reputation.</span></p>
+      <p style="margin-left:32px; display:flex; align-items:flex-start; gap:12px;"><span
+          style="flex:0 0 12px;">&bull;</span><span><strong><em>Show</em></strong> proven experience in financial
+          structuring and complex blended vehicles.</span></p>
     </section>
 
     <div class="news-divider"></div>
 
     <section class="news-block">
-      <p><a href="https://g20.org/g20-media/chairs-summary-4th-finance-ministers-central-bank-governors-meeting/"
-          target="_blank" rel="noopener">G20 Finance Ministers Address Global Economic Risks Ahead of 2025 Goals</a></p>
-      <p>Members reaffirm commitment to multilateral cooperation. Focus on debt sustainability for low-income countries.
-        Strengthening infrastructure investment through blended finance.</p>
-      <p>The G20 meeting highlights urgent economic challenges while promoting collaborative frameworks to enhance
-        financial stability and sustainable development across member nations.</p>
+      <p>The UN Environment Programme's (UNEP) expansion of the Oil and Gas Methane Partnership 2.0 has implications for
+        methane emissions tracking and mitigation, says UNEP.</p>
+      <p>The increase in responses to methane alerts from <strong>1%</strong> to <strong>12%</strong> indicates a growing recognition of the need for
+        urgent action to meet climate targets, UNEP added.</p>
+      <p>The Government of Japan expects IMEO to contribute to accelerating global action on methane emission
+        reductions through collaboration with governments, industries, and civil society.</p>
     </section>
 
     <div class="news-divider"></div>
+
+
 
     <section class="news-block">
-      <p><a
-          href="https://g20.org/g20-media/ministerial-declaration-on-debt-sustainability-4th-finance-ministers-central-bank-governors-meeting/"
-          target="_blank" rel="noopener">G20 Finance Ministers Commit to Enhanced Debt Sustainability Framework by
-          2025</a></p>
-      <p>G20 reaffirms support for low-income countries&#39; debt management. Interest payments on external debt for
-        LICs have doubled. New measures aim to improve debt transparency and resilience.</p>
-      <p>The G20&#39;s renewed commitment to debt sustainability aims to bolster financial stability in vulnerable
-        economies, addressing rising debt burdens while enhancing international cooperation and transparency.</p>
+      <p>The <strong>European Commission</strong> is consulting on policy options to enhance plastic recycling in the automotive sector
+        that aims to improve circularity in vehicle design and production. Submissions are due by <strong>21 November 2025</strong>.</p>
     </section>
 
     <div class="news-divider"></div>
 
-    <section class="news-block">
-      <p><a
-          href="https://www.europarl.europa.eu/news/en/press-room/20251009IPR30836/sustainability-reporting-and-due-diligence-simpler-rules-for-fewer-companies"
-          target="_blank" rel="noopener">EU Proposes Major Cuts to Sustainability Reporting by 80%</a></p>
-      <p>Fewer firms required to report on sustainability metrics. Only companies with over 1,000 employees affected.
-        New rules to be negotiated by 24 October 2025.</p>
-      <p>The proposed changes aim to streamline compliance for large businesses while reducing administrative burdens,
-        potentially reshaping the landscape of corporate sustainability obligations.</p>
-    </section>
-
-    <div class="news-divider"></div>
-
-    <section class="news-block">
-      <p><a href="https://www.gov.scot/news/18-million-for-oil-and-gas-transition-training-fund/" target="_blank"
-          rel="noopener">£18 Million Boost For Oil And Gas Transition Training Fund By 2029</a></p>
-      <p>Scottish and UK Governments jointly invest £18 million. Thousands of North Sea workers to receive tailored
-        support. Funding aims to facilitate transition to sustainable energy jobs.</p>
-      <p>The funding expansion aims to enhance workforce adaptability in Scotland&#39;s energy sector, aligning skills
-        with the growing demand for sustainable energy roles.</p>
-    </section>
-
-    <div class="news-divider"></div>
-
-    <section class="news-block">
-      <p><a href="https://www.gov.uk/government/news/bird-flu-avian-influenza-latest-situation-in-england"
-          target="_blank" rel="noopener">UK Confirms HPAI H5N1 in 10,000-Bird Flock, Culling Underway</a></p>
-      <p>HPAI H5N1 detected in commercial poultry near Penrith. 3km protection and 10km surveillance zones established.
-        All affected birds will be humanely culled immediately.</p>
-      <p>The outbreak underscores ongoing biosecurity challenges in poultry farming, prompting urgent measures to
-        contain the spread of avian influenza.</p>
-    </section>
-
-    <div class="news-divider"></div>
-
-    <section class="news-block">
-      <p><a href="https://www.gov.uk/government/news/clean-energy-jobs-boom-to-bring-thousands-of-new-jobs"
-          target="_blank" rel="noopener">UK Government Unveils Plan for 400,000 Clean Energy Jobs by 2030</a></p>
-      <p>National plan aims to create 400,000 new roles. High demand for plumbers, electricians, and welders. Investment
-        expected to exceed £50 billion by 2026.</p>
-      <p>The initiative seeks to align workforce training with clean energy demands, enhancing job quality and regional
-        economic growth while addressing skills shortages.</p>
-    </section>
-
-    <div class="news-divider"></div>
-
-    <section class="news-block">
-      <p><a href="https://www.imf.org/en/News/Articles/2025/10/17/sp101725-resilience-in-a-world-of-uncertainty"
-          target="_blank" rel="noopener">IMF Urges Global Cooperation Amid Rising Trade Barriers and Uncertainty</a></p>
-      <p>IMF highlights rising trade barriers impacting global growth. 188 of 191 member countries avoid retaliatory
-        tariffs. Focus on fiscal consolidation and AI investment for resilience.</p>
-      <p>The IMF&#39;s latest assessment underscores the need for cooperative trade policies and strategic investments
-        to navigate economic uncertainties and bolster global growth.</p>
-    </section>
-
-    <div class="news-divider"></div>
-
-    <section class="news-block">
-      <p><a
-          href="https://www.imo.org/en/MediaCentre/PressBriefings/pages/IMO-net-zero-shipping-talks-to-resume-in-2026.aspx"
-          target="_blank" rel="noopener">IMO Delays Net-Zero Shipping Framework Discussions Until 2026</a></p>
-      <p>Marine Environment Protection Committee adjourns for one year. Member States to seek consensus on emissions
-        regulations. Intersessional Working Group continues drafting guidelines.</p>
-      <p>The postponement signals ongoing challenges in aligning international maritime emissions standards, impacting
-        future compliance and operational strategies for shipping companies.</p>
-    </section>
-
-    <div class="news-divider"></div>
+    
 
   </div>
 </body>
 
-</html>
+</html> 
