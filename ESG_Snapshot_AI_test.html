@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ESG Snapshot AI-Content DEMO Issue</title>
+  <style>
+    /* ===== GLOBAL STYLES ===== */
+    body {
+      background: #f1f3f4;
+      /* grey viewport background */
+      margin: 0;
+      padding: 40px 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+      font-size: 18px;
+      line-height: 1.6;
+      letter-spacing: 0;
+    }
+
+    .newsletter-container {
+      background: #fff;
+      /* white canvas */
+      max-width: 800px;
+      margin: 0 auto;
+      border: 1px solid #e5e7eb;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+      overflow: hidden;
+    }
+
+    /* ===== HEADER STYLES ===== */
+    .newsletter-header {
+      background: #cfd7d5;
+      border-bottom: 1px solid #e5e7eb;
+      padding: 32px 24px 40px;
+    }
+
+    .newsletter-header h1 {
+      font-size: 2.5rem;
+      font-weight: 600;
+      color: #0f172a;
+      margin: 0 0 10px;
+    }
+
+    .newsletter-header h2 {
+      font-size: 1rem;
+      font-weight: 400;
+      font-style: italic;
+      color: #334155;
+      margin: 0;
+      line-height: 1.5;
+    }
+
+    /* ===== IMAGE SUBSECTION STYLES ===== */
+    .subsection-image {
+      display: block;
+      width: 100%;
+      max-height: 80px;
+      /* reduced height */
+      object-fit: cover;
+      /* maintain aspect ratio and crop */
+      object-position: center;
+      /* center focus */
+      border-top: 1px solid #e5e7eb;
+    }
+
+    /* ===== NEWS BLOCK STYLES ===== */
+    .news-block {
+      padding: 32px 24px;
+      background: #fff;
+    }
+
+    .news-divider {
+      width: 90%;
+      max-width: 600px;
+      height: 1px;
+      background: #e5e7eb;
+      margin: 0 auto;
+    }
+
+    .news-block a {
+      color: #0f172a;
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    .news-block a:hover {
+      text-decoration: underline;
+    }
+
+    .news-block p {
+      margin: 0;
+      line-height: 1.6;
+      color: #0f172a;
+    }
+
+    .news-block p + p {
+      margin-top: 1.6em;
+    }
+
+    .news-block p:last-of-type {
+      color: #334155;
+    }
+
+    /* ===== EVENTS LIST STYLES ===== */
+    .event-list {
+      padding: 32px 24px;
+      background: #fff;
+    }
+
+    .event-note {
+      margin: 0 0 20px;
+      color: #0f172a;
+    }
+
+    .event-item {
+      margin: 0 0 18px;
+      padding: 16px;
+      border-radius: 10px;
+      background: #f3f4f6;
+      /* default grey */
+    }
+
+    .event-item.new {
+      background: #eaf4ff;
+      /* new listing highlight (blue) */
+    }
+
+    .event-item p {
+      margin: 0;
+      color: #0f172a;
+      line-height: 1.6;
+    }
+
+    .event-item a {
+      color: #0f172a;
+      text-decoration: none;
+      font-weight: 600;
+      /* emphasize linked title */
+    }
+
+    .event-item a:hover {
+      text-decoration: underline;
+    }
+
+    /* ===== JOBS BOARD STYLES ===== */
+    .job-list {
+      padding: 32px 24px;
+      background: #fff;
+    }
+
+    .job-item {
+      margin: 0 0 18px;
+      padding: 16px;
+      border-radius: 10px;
+      background: #f3f4f6;
+      /* default grey background */
+    }
+
+    .job-item.new {
+      background: #eaf4ff;
+      /* highlight new listings */
+    }
+
+    .job-item p {
+      margin: 0;
+      color: #0f172a;
+      line-height: 1.6;
+    }
+
+    .job-item a {
+      color: #0f172a;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .job-item a:hover {
+      text-decoration: underline;
+    }
+
+  </style>
+</head>
+
+<body>
+  <div class="newsletter-container">
+
+    <!-- ===== HEADER SECTION ===== -->
+    <section class="newsletter-header">
+      <h1>ESG Snapshot (AI DEMO)</h1>
+      <h2>(The demo is for text content only. Can be formatted to default web format when publishing.)</h2>
+    </section>
+
+    <!-- ===== HIGHLIGHTS SECTION ===== -->
+    <section class="news-block" style="padding:32px 24px; background:#fff;">
+      <p style="margin:0 0 20px; color:#0f172a; font-weight:600; font-size:1.1rem;">
+        This week's highlights include:
+      </p>
+
+      <ul style="margin:0; padding-left:32px; color:#0f172a; line-height:1.7;">
+        <!-- National -->
+        <ul>
+          <li><strong>Supplier survey launched.</strong> Australia&#39;s grocery suppliers can influence policy through
+            a survey open until 11 November 2025.</li>
+          <li><strong>Regulatory reform unveiled.</strong> The Albanese Government&#39;s updated RIG aims to streamline
+            financial sector compliance and enhance coordination.</li>
+          <li><strong>Australia&#39;s emissions target.</strong> The government aims for a 62–70% reduction by 2035,
+            unlocking economic opportunities.</li>
+        </ul>
+    </section>
+
+    <div class="news-divider"></div>
+
+    <!-- ===== NATIONAL ===== -->
+    <section>
+      <img src="https://github.com/alt-auto-ai/esg_ai/raw/main/ESG%20Snapshot_%20Issue_files/National.png"
+        alt="National Section Header" class="subsection-image" />
+    </section>
+    <section class="news-block">
+      <p><a href="https://igcc.org.au/building-board-capability/" target="_blank" rel="noopener">New IGCC Report Sets
+          Standards for Board Climate Governance by 2025</a></p>
+      <p>IGCC outlines five principles for climate oversight. Boards must enhance skills for net zero transition.
+        Investors can now assess board readiness effectively.</p>
+      <p>The report establishes a framework for evaluating board capabilities, crucial for managing climate risks and
+        ensuring corporate accountability in the transition to net zero.</p>
+    </section>
+    <div class="news-divider"></div>
+    <section class="news-block">
+      <p><strong>Statutory development - Giant Cuttlefish protection.</strong> The state government has introduced a
+        Bill to better safeguard Giant Cuttlefish that breed in the northern Spencer Gulf.</p>
+      <p>The Fisheries Management (Cuttlefish&ndash;Northern Spencer Gulf) Amendment Bill permanently bans the taking
+        Giant Cuttlefish, unless authorised for research purposes by a ministerial permit.</p>
+      <p>Meanwhile, the state government says South Australia&#39;s giant cuttlefish population has had a successful
+        hatching season, despite the algal bloom.</p>
+      <p>New monitoring suggests more than 600,000 eggs laid at Cuttlefish Coast have already hatched, with more than
+        90% of the estimated 800,000 eggs expected to hatch by the end of October.</p>
+    </section>
+    <div class="news-divider"></div>
+    <section class="news-block">
+      <p><strong>A Queensland parliamentary inquiry</strong> into the state&#39;s container deposit scheme is due to
+        report on Thursday.</p>
+    </section>
+    <div class="news-divider"></div>
+    <section class="news-block">
+      <p><strong>The Essential Services Commission</strong> is consulting on guidance and administrative requirements for
+        the new Victorian Energy Upgrades scheme activity that subsidises commercial and industrial solar PV
+        installations.</p>
+      <p>Comments are due by 16 October.</p>
+    </section>
+    <div class="news-divider"></div>
+    <section class="news-block">
+      <p><strong>Grant opportunity - hydrogen.</strong> ARENA has opened the second round of its Hydrogen Headstart
+        Program, with up to $2 billion in funding available.</p>
+      <p>ARENA is inviting expressions of interest from projects that</p>
+      <p style="margin-left:32px; display:flex; align-items:flex-start; gap:12px;"><span
+          style="flex:0 0 12px;">&bull;</span><span><strong>demonstrate</strong> innovative plant construction and design
+          to reduce capital costs.</span></p>
+      <p style="margin-left:32px; display:flex; align-items:flex-start; gap:12px;"><span
+          style="flex:0 0 12px;">&bull;</span><span><strong>improve</strong> the efficiency of electrolysers.</span></p>
+      <p style="margin-left:32px; display:flex; align-items:flex-start; gap:12px;"><span
+          style="flex:0 0 12px;">&bull;</span><span><strong>demonstrate</strong> flexible operations and other methods to
+          reduce the cost of renewable electricity.</span></p>
+      <p style="margin-left:32px; display:flex; align-items:flex-start; gap:12px;"><span
+          style="flex:0 0 12px;">&bull;</span><span><strong>enhance</strong> end-use infrastructure for priority sectors,
+          including hydrogen for green ammonia, iron and steel, alumina, aviation and shipping.</span></p>
+    </section>
+    <div class="news-divider"></div>
+    <section class="news-block">
+      <p><strong>The NSW Independent Planning Commission</strong> has approved the proposed 500MW Tallawang solar farm
+        proposed for a site near Gulgong, within the Central West Orana Renewable Energy Zone.</p>
+      <p>The proponent has undertaken to provide the Mid-Western Regional Council with $425,000 annually for 35
+        years.</p>
+    </section>
+
+    <div class="news-divider"></div>
+    <section class="news-block">
+      <p><strong>The NSW government</strong> has announced five successful recipients of grants under the first round of
+        the First Nations Fund, which ensures renewable energy projects connecting to the Central West-Orana REZ provide
+        meaningful opportunities for Aboriginal people and communities.</p>
+
+      <p>Grant applications are now being accepted under the second round, with $4 million available.</p>
+    </section>
+
+    <div class="news-divider"></div>
+    <section class="news-block">
+      <p><strong>The City of Stirling</strong> - Western Australia&#39;s most populous local government area - has decided
+        to start a Food Organics and Garden Organics (FOGO) trial.</p>
+      <p>&quot;The City&#39;s decision to participate is another step towards FOGO being a permanent part of how we all
+        deal with our household waste in the Perth and Peel regions,&quot; Environment Minister Matthew Swanbourn said.
+      </p>
+    </section>
+
+    <div class="news-divider"></div>
+    <section class="news-block">
+      <p><strong>The government&#39;s 2035 target range</strong> has implications for the average annual decline rate
+        under the Safeguard Mechanism, which currently stands at 4.9% annually, says the Investor Group on Climate
+        Change.</p>
+      <p>&quot;Due to the target range, baseline reductions from 2030 onwards will be harder for industry to forecast
+        until the Safeguard review is complete,&quot; the IGCC says.</p>
+      <p>&quot;A 62% NDC is an indicative 4.82% decline rate, a 65% NDC is an indicative 5.5% decline rate and a 70% NDC
+        is an indicative 6.85% decline rate,&quot; the IGCC says.</p>
+    </section>
+
+    <div class="news-divider"></div>
+    <section class="news-block">
+      <p><strong>Resources Minister Madeleine King</strong> has given a speech in Perth to the Australia-Japan
+        Cooperation Committee, focusing on critical minerals, CCS, and Australia&#39;s gas exports.</p>
+    </section>
+
+    <div class="news-divider"></div>
+    <section class="news-block">
+      <p><strong>Manufacturing Australia</strong>, which has members including BlueScope and Cement Australia, has
+        launched a &quot;fair gas prices&quot; campaign and website.</p>
+      <p>The group is seeking a national gas reservation scheme, and faster approvals for new gas projects.</p>
+      <p>BlueScope CEO Mark Vassella launched the campaign in a speech to the National Press Club.</p>
+    </section>
+
+    <div class="news-divider"></div>
+    <section class="news-block">
+      <p>&quot;<strong>As some migratory bird populations decrease</strong>, there is a growing need to minimise
+        threats,&quot; says a DCCEEW report prepared for consultative meetings with China, Japan, and Korea on protecting
+        migratory birds.</p>
+      <p>&quot;The Australian Government recognises that efforts to conserve migratory birds in one country can only be
+        effective with the cooperation and complementary actions in all countries that these birds visit,&quot; it says.
+      </p>
+      <p>&quot;Without urgent action to reduce or eliminate threats, further declines leading to extinctions are to be
+        expected.&quot;</p>
+    </section>
+
+    <div class="news-divider"></div>
+    <section class="news-block">
+      <p><strong>In line with advice from the WA Appeals Convenor</strong>, Environment Minister Matthew Swanbourn has
+        dismissed an appeal against licence amendments granted to Chevron&#39;s Barrow Island LNG operations.</p>
+    </section>
+
+    <div class="news-divider"></div>
+
+    <section class="news-block">
+      <p><strong>The Essential Services Commission</strong> is consulting on guidance and administrative requirements for
+        the new Victorian Energy Upgrades scheme activity that subsidises commercial and industrial solar PV
+        installations.</p>
+      <p>Comments are due by 16 October.</p>
+    </section>
+
+    <div class="news-divider"></div>
+
+
+
+
+
+
+
+
+
+
+    <!-- ===== EVENTS ===== -->
+    <section>
+      <img src="https://github.com/alt-auto-ai/esg_ai/raw/main/ESG%20Snapshot_%20Issue_files/events.png"
+        alt="Events Section Header" class="subsection-image" />
+    </section>
+
+    <section class="event-list" aria-labelledby="events-title">
+      <div class="event-item new">
+        <p style="font-weight:400;">
+          <strong>14-Oct</strong> | <a
+            href="https://www.brighttalk.com/webcast/20092/653703?size=10&rank=-webcast_relevance&duration=0..&contentType=webcast&q=esg"
+            target="_blank" rel="noopener" style="font-weight:400; text-decoration:none;">Beyond the label: ESG,
+            regulation and the reality for advisers</a>
+        </p>
+      </div>
+
+      <div class="event-item new">
+        <p style="font-weight:400;">
+          <strong>10-Dec</strong> | <a
+            href="https://unglobalcompact.org.au/wp-content/uploads/2025/08/Email-banner-6.png.webp" target="_blank"
+            rel="noopener" style="font-weight:400; text-decoration:none;">Peer Learning Session | Sustainability
+            Reporting Community of Practice</a>
+        </p>
+      </div>
+    </section>
+
+    <div class="news-divider"></div>
+
+    <style>
+      .event-item a:hover {
+        text-decoration: underline !important;
+      }
+
+    </style>
+
+    <!-- ===== COMPANY NEWS AND RESOURCES ===== -->
+    <section>
+      <img
+        src="https://github.com/alt-auto-ai/esg_ai/raw/main/ESG%20Snapshot_%20Issue_files/Company-news-and-resources.png"
+        alt="Company News and Resources Section Header" class="subsection-image" />
+    </section>
+    <section class="news-block">
+      <p><a href="#" target="_blank" rel="noopener">Company News and Resource Updates.</a></p>
+      <p>Placeholder content for internal updates, insights, or publications.</p>
+      <p>Ideal for highlighting key organisational announcements.</p>
+    </section>
+
+    <div class="news-divider"></div>
+    <!-- ===== JOBS BOARD ===== -->
+    <section>
+      <img src="https://github.com/alt-auto-ai/esg_ai/raw/main/ESG%20Snapshot_%20Issue_files/Jobs-Board.png"
+        alt="Jobs Board Section Header" class="subsection-image" />
+    </section>
+    <section class="job-list" aria-labelledby="jobs-title">
+      <div class="job-item new">
+        <p style="font-weight:400;">
+          <a href="https://www.seek.com.au/sustainability-jobs/in-All-Australia/full-time?daterange=3" target="_blank"
+            rel="noopener" style="text-decoration:none;">Environment Protection Authority Victoria is hiring a regional
+            manager - North Metro in Preston, Melbourne.</a>
+        </p>
+      </div>
+
+      <div class="job-item new">
+        <p style="font-weight:400;">
+          <a href="https://www.seek.com.au/CEO-jobs/in-All-Australia/full-time?daterange=3" target="_blank"
+            rel="noopener" style="text-decoration:none;">Clean Energy Regulator is hiring a general manager compliance
+            branch in Canberra.</a>
+        </p>
+      </div>
+    </section>
+
+    <style>
+      .job-item a:hover {
+        text-decoration: underline !important;
+      }
+
+    </style>
+
+    <!-- ===== KNOWLEDGE, INSIGHTS & DATA (KID) ===== -->
+    <section>
+      <img src="https://github.com/alt-auto-ai/esg_ai/raw/main/ESG%20Snapshot_%20Issue_files/KID.png"
+        alt="Knowledge, Insights, and Data Section Header" class="subsection-image" />
+    </section>
+    <section class="news-block">
+      <p><a href="https://energy.ec.europa.eu/news/focus-hydrogen-2025-10-14_en" target="_blank" rel="noopener">EU Aims
+          For 10% Hydrogen Share By 2050 To Decarbonise Economy</a></p>
+      <p>Targets 10% hydrogen in energy mix by 2050. Focus on hard-to-electrify sectors like transport. €5.6 billion
+        allocated for hydrogen projects.</p>
+      <p>The EU&#39;s strategy prioritises hydrogen to enhance energy security and reduce emissions, addressing critical
+        infrastructure and investment needs for a sustainable energy transition.</p>
+    </section>
+
+    <div class="news-divider"></div>
+
+
+  </div>
+</body>
+
+</html>
